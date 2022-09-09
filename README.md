@@ -5,6 +5,8 @@ A cleaned up version of the Horiseon home page. I looked to follow accessibility
 
 ## Link to deployed project
 
+https://bmaggiano.github.io/01-Code-Refactor/
+
 ## Screenshot
 
 ![image](https://user-images.githubusercontent.com/103971233/189250195-5a0d5f01-9a8f-41a7-a76d-27c947f9ba02.png)
