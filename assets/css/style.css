@@ -1,13 +1,14 @@
+/* Universal selector */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* Element selector for body of page */
 body {
     background-color: #d9dcd6;
 }
-
+/* Element selector for header */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,16 +16,16 @@ header {
     color: #ffffff;
 
 }
-
+/* Element selector for the h1 element on header */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
-header h1 .seo {
+/* Class selector for .seo in the h1 of header... only one class for .seo on the page*/
+.seo {
     color: #d9dcd6;
 }
-
+/* Element selector for our unordered list in header */
 header ul {
     list-style-type: none;    
     padding-top: 15px;
@@ -33,21 +34,21 @@ header ul {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/* Element selector for our list items inside our unordered list in the header */
 header ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* Element selector for all a tags */
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* Element selector for all p tags */
 p {
     font-size: 16px;
 }
-
+/* Class selector for .hero which formulates our main background image on the page */
 .hero {
     height: 800px;
     width: 100%;
@@ -56,23 +57,91 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/* Class selector for float-left */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/* Class selector for float-right */
 .float-right {
     float: right;
     margin-left: 25px;
 }
-
+/* Class selector for content */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Consolidated the below styles into one Class selector that selects all three section classes 
+    separated with commas*/
+    .search-engine-optimization,
+    .online-reputation-management,
+    .social-media-marketing {
+        margin-bottom: 20px;
+        padding: 50px;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #0072bb;
+        color: #ffffff;
+    }
+    
+    /* Keep commented out unless need to change individual sections down the road.
+        They are consolidated above */
+    
+    /* .online-reputation-management {
+        margin-bottom: 20px;
+        padding: 50px;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #0072bb;
+        color: #ffffff;
+    }
+    
+    .social-media-marketing {
+        margin-bottom: 20px;
+        padding: 50px;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #0072bb;
+        color: #ffffff;
+    } */
+    
+    
+    /* Consolidated class selectors for .content images because they all fall under the
+        .content class and share the same properties*/
+    .content img {
+        max-height: 200px;
+    }
+    
+    /* .online-reputation-management img {
+        max-height: 200px;
+    }
+    
+    .social-media-marketing img {
+        max-height: 200px;
+    } */
+    
+    /* Consolidated h2 elements inside the .content section to save space */
+    .content h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+/* Keep commented out unless we need to change an element individually */
+
+/* .online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+} */
+
+/* Class selector for benefits */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -82,39 +151,62 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-}
-
-.benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* Since all the cards below are the same style and all wrapped inside the .benefits 
+    section, let's just add the margin-bottom and color properties to the .benefits class 
+    selector above */
+
+/* .benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
 .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
-}
+} */
 
-.benefit-lead h3 {
+/* Class selector for all h3 styles inside .benefits section */
+.benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Since all the h3s below are covered in the section .benefits let's
+    clean up the code and wrap them under a new css style called .benefits h3 (above) */
+
+/* .benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
 .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
+} */
+
+/* Since all img elements fall under .benefits we can consolidate 
+    the styles into one class selector below */
+.benefits img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
-.benefit-lead img {
+/* Unnecessary classes to access each element individually
+    will keep code commented out if need to change specific element later on 
+    consolidated version above*/
+
+/* .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -130,69 +222,16 @@ p {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
+} */
 
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* Element selector for the footer */
 footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
-footer h2 {
+/* Element selector for the footer h4 */
+footer h4 {
     font-size: 20px;
 }
