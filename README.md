@@ -7,4 +7,4 @@ A cleaned up version of the Horiseon home page. I looked to follow accessibility
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/103971233/189247287-3b6b1eab-2eda-44db-a473-93e33752ce3f.png)
+![image](https://user-images.githubusercontent.com/103971233/189250195-5a0d5f01-9a8f-41a7-a76d-27c947f9ba02.png)
