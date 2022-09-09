@@ -1,19 +1,6 @@
 # 01-Code-Refactor
 
-## User Story
-As a bootcamp student
-I want to clean up the index.html file and follow proper accessibility standards.
+## Description
+A cleaned up version of the Horiseon home page. I looked to follow accessibility standards by adding alt elements to images as well as improve the overal semantic flow of the index.html file. The style.css page had several repititions for selectors and I looked to consolidate that as much as possible while commenting to make sure other web devs can follow the flow of work. This makes the code more manageable and easier to follow if others would like to add their code in the future, but also leaves room for the current engineer to make easy, concise changes.
 
-## Acceptance Criteria
-
-GIVEN a webpage meets accessibility standards
-WHEN I view the source code
-THEN I find semantic HTML elements
-WHEN I view the structure of the HTML elements
-THEN I find that the elements follow a logical structure independent of styling and positioning
-WHEN I view the icon and image elements
-THEN I find accessible alt attributes
-WHEN I view the heading attributes
-THEN they fall in sequential order
-WHEN I view the title element
-THEN I find a concise, descriptive title
+## 
